@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt" translate="no" class="notranslate">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="google" content="notranslate">
+  <meta name="theme-color" content="#0057FF">
+  <title>Sem ligação — ExameNova</title>
+  <link rel="icon" href="/assets/images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary:  #0057FF;
+      --bg:       #F0F4FF;
+      --text:     #1A1A2E;
+      --subtext:  #5A6478;
+      --muted:    #9AA3B5;
+      --card:     #FFFFFF;
+      --border:   rgba(0,87,255,0.1);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg:     #0D1117;
+        --text:   #E6EDF3;
+        --subtext:#8B949E;
+        --card:   #161B22;
+        --border: rgba(99,131,255,0.15);
+      }
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      min-height: 100dvh;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 24px;
+      text-align: center;
+    }
+
+    .logo-strip {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 40px;
+    }
+
+    .logo-img {
+      width: 36px;
+      height: 36px;
+      border-radius: 9px;
+      object-fit: contain;
+    }
+
+    .logo-name {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--primary);
+      letter-spacing: -0.5px;
+    }
+
+    .status-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      margin-bottom: 28px;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #E53935;
+      animation: blink 1.5s ease-in-out infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1;   }
+      50%       { opacity: 0.3; }
+    }
+
+    .status-text {
+      font-size: 12px;
+      font-weight: 600;
+      color: #E53935;
+    }
+
+    .icon-wrap {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: rgba(0,87,255,0.08);
+      border: 2px solid rgba(0,87,255,0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      color: var(--primary);
+      margin: 0 auto 28px;
+      animation: pulse 2.5s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1);    opacity: 1;   }
+      50%       { transform: scale(1.05); opacity: 0.8; }
+    }
+
+    .title {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 10px;
+      letter-spacing: -0.4px;
+    }
+
+    .subtitle {
+      font-size: 15px;
+      color: var(--subtext);
+      line-height: 1.7;
+      max-width: 300px;
+      margin: 0 auto 36px;
+    }
+
+    .tips-card {
+      background: var(--card);
+      border: 1.5px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+      max-width: 340px;
+      width: 100%;
+      margin: 0 auto 32px;
+      text-align: left;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    .tips-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 14px;
+    }
+
+    .tip-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .tip-row:last-child { border-bottom: none; }
+
+    .tip-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: rgba(0,87,255,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      color: var(--primary);
+      flex-shrink: 0;
+    }
+
+    .tip-text {
+      font-size: 13px;
+      color: var(--subtext);
+      line-height: 1.5;
+    }
+
+    .retry-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, #0044CC, #0057FF);
+      color: #fff;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 14px 32px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(0,87,255,0.3);
+      transition: filter 0.2s, transform 0.15s;
+      margin-bottom: 20px;
+    }
+
+    .retry-btn:hover  { filter: brightness(1.08); }
+    .retry-btn:active { transform: scale(0.97);   }
+
+    .retry-btn.spinning i {
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .slogan {
+      font-size: 12px;
+      color: var(--muted);
+      font-style: italic;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <div class="logo-strip">
+      <img
+        class="logo-img"
+        src="/assets/images/favicon.png"
+        alt="ExameNova"
+        onerror="this.style.display='none'"
+      >
+      <span class="logo-name notranslate" translate="no">ExameNova</span>
+    </div>
+
+    <div class="status-row">
+      <div class="status-dot"></div>
+      <span class="status-text notranslate" translate="no">Sem ligação à internet</span>
+    </div>
+
+    <div class="icon-wrap">
+      <i class="fa-solid fa-wifi-slash"></i>
+    </div>
+
+    <h1 class="title notranslate" translate="no">
+      Sem ligação à internet
+    </h1>
+    <p class="subtitle notranslate" translate="no">
+      O ExameNova precisa de uma ligação activa para funcionar.
+      Verifique a sua internet e tente novamente.
+    </p>
+
+    <div class="tips-card">
+      <div class="tips-title notranslate" translate="no">O que pode fazer</div>
+      <div class="tip-row">
+        <div class="tip-icon"><i class="fa-solid fa-rotate"></i></div>
+        <div class="tip-text notranslate" translate="no">
+          Active os dados móveis ou o Wi-Fi e tente novamente.
+        </div>
+      </div>
+      <div class="tip-row">
+        <div class="tip-icon"><i class="fa-solid fa-signal"></i></div>
+        <div class="tip-text notranslate" translate="no">
+          Verifique se tem sinal suficiente na sua área.
+        </div>
+      </div>
+      <div class="tip-row">
+        <div class="tip-icon"><i class="fa-solid fa-circle-info"></i></div>
+        <div class="tip-text notranslate" translate="no">
+          O seu progresso fica guardado em segurança na nuvem.
+        </div>
+      </div>
+    </div>
+
+    <button class="retry-btn notranslate" id="retryBtn" translate="no">
+      <i class="fa-solid fa-rotate-right"></i>
+      Tentar novamente
+    </button>
+
+    <p class="slogan notranslate" translate="no">
+      "O sucesso no exame começa hoje, não amanhã."
+    </p>
+
+  </div>
+
+  <script>
+    // Auto-retry when connection is restored
+    window.addEventListener('online', () => {
+      window.location.href = '/panel';
+    });
+
+    // Manual retry
+    const retryBtn = document.getElementById('retryBtn');
+    retryBtn.addEventListener('click', () => {
+      retryBtn.classList.add('spinning');
+      retryBtn.disabled = true;
+      setTimeout(() => {
+        if (navigator.onLine) {
+          window.location.href = '/panel';
+        } else {
+          retryBtn.classList.remove('spinning');
+          retryBtn.disabled = false;
+        }
+      }, 1200);
+    });
+
+    // Check every 5 seconds automatically
+    setInterval(() => {
+      if (navigator.onLine) window.location.href = '/panel';
+    }, 5000);
+  </script>
+</body>
+</html>

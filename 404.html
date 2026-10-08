@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt" translate="no" class="notranslate">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="google" content="notranslate">
+  <meta name="theme-color" content="#0057FF">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Página não encontrada — ExameNova</title>
+  <link rel="icon" href="/assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary:      #0057FF;
+      --primary-dark: #0044CC;
+      --accent:       #7C3AED;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      min-height: 100dvh;
+      min-height: 100vh;
+      background: linear-gradient(160deg, #0033AA 0%, #0044CC 45%, #0057FF 75%, #1565C0 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .top-line {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg,
+        transparent 0%,
+        rgba(255,255,255,0.4) 30%,
+        rgba(255,255,255,0.8) 50%,
+        rgba(255,255,255,0.4) 70%,
+        transparent 100%
+      );
+    }
+
+    .bg-dots {
+      position: absolute; inset: 0;
+      background-image:
+        radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1px),
+        radial-gradient(circle, rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size: 32px 32px, 64px 64px;
+      background-position: 0 0, 16px 16px;
+      pointer-events: none;
+    }
+
+    .bg-glow {
+      position: absolute;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 70%);
+      top: 45%; left: 50%;
+      transform: translate(-50%, -50%);
+      animation: glow 7s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    @keyframes glow {
+      0%, 100% { opacity: 0.4; transform: translate(-50%,-50%) scale(1);    }
+      50%       { opacity: 0.9; transform: translate(-50%,-50%) scale(1.25); }
+    }
+
+    .particle {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+      opacity: 0;
+      animation: particleFly 9s ease-in-out infinite;
+    }
+
+    @keyframes particleFly {
+      0%   { opacity: 0;   transform: translateY(0)      scale(0);   }
+      10%  { opacity: 0.5; }
+      90%  { opacity: 0.2; }
+      100% { opacity: 0;   transform: translateY(-150px) scale(1.5); }
+    }
+
+    .p1 { width:6px; height:6px; background:rgba(255,255,255,0.22); top:72%; left:12%; animation-delay:0s;   }
+    .p2 { width:4px; height:4px; background:rgba(255,255,255,0.18); top:63%; left:80%; animation-delay:2s;   }
+    .p3 { width:8px; height:8px; background:rgba(255,255,255,0.14); top:80%; left:45%; animation-delay:3.5s; }
+    .p4 { width:3px; height:3px; background:rgba(255,255,255,0.28); top:68%; left:65%; animation-delay:5s;   }
+    .p5 { width:5px; height:5px; background:rgba(255,255,255,0.2);  top:76%; left:28%; animation-delay:1.5s; }
+    .p6 { width:7px; height:7px; background:rgba(255,255,255,0.12); top:66%; left:90%; animation-delay:6s;   }
+
+    .card {
+      background: rgba(255,255,255,0.08);
+      border: 1.5px solid rgba(255,255,255,0.16);
+      border-radius: 28px;
+      padding: 40px 32px 32px;
+      max-width: 380px;
+      width: 100%;
+      text-align: center;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      box-shadow: 0 24px 60px rgba(0,0,0,0.25);
+      position: relative; z-index: 1;
+      animation: fadeUp 0.55s ease both;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0);    }
+    }
+
+    .logo-strip {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    .logo-img {
+      width: 32px; height: 32px;
+      border-radius: 8px;
+      object-fit: contain;
+    }
+
+    .logo-name {
+      font-size: 18px;
+      font-weight: 900;
+      color: #fff;
+      letter-spacing: -0.4px;
+    }
+
+    .giant-404 {
+      font-size: 100px;
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -6px;
+      color: transparent;
+      position: relative;
+      margin-bottom: 4px;
+      user-select: none;
+    }
+
+    .giant-404::after {
+      content: '404';
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg,
+        rgba(255,255,255,1)   0%,
+        rgba(255,255,255,0.7) 50%,
+        rgba(255,255,255,0.9) 100%
+      );
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: shine 3.5s linear infinite;
+    }
+
+    @keyframes shine {
+      0%   { background-position: 0%   center; }
+      100% { background-position: 200% center; }
+    }
+
+    .float-icon {
+      font-size: 2.4rem;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 16px;
+      display: block;
+      animation: floatIcon 3.2s ease-in-out infinite;
+    }
+
+    @keyframes floatIcon {
+      0%, 100% { transform: translateY(0)     rotate(-4deg); }
+      50%       { transform: translateY(-10px) rotate(4deg);  }
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: 900;
+      color: #fff;
+      letter-spacing: -0.3px;
+      margin-bottom: 8px;
+      line-height: 1.25;
+    }
+
+    .title span {
+      background: linear-gradient(135deg, rgba(255,255,255,1), rgba(255,255,255,0.65));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.7;
+      margin-bottom: 24px;
+      max-width: 280px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .divider {
+      width: 40px; height: 1.5px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+      border-radius: 2px;
+      margin: 0 auto 22px;
+    }
+
+    .links-card {
+      background: rgba(0,0,0,0.18);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 6px;
+      margin-bottom: 22px;
+      text-align: left;
+    }
+
+    .link-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 13px;
+      border-radius: 12px;
+      cursor: pointer;
+      text-decoration: none;
+      color: rgba(255,255,255,0.85);
+      transition: background 0.15s;
+    }
+
+    .link-row:hover  { background: rgba(255,255,255,0.07); }
+    .link-row:active { background: rgba(255,255,255,0.12); }
+
+    .link-icon {
+      width: 34px; height: 34px;
+      border-radius: 9px;
+      background: rgba(255,255,255,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      color: rgba(255,255,255,0.8);
+      flex-shrink: 0;
+    }
+
+    .link-body  { flex: 1; }
+
+    .link-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: rgba(255,255,255,0.9);
+      margin-bottom: 2px;
+    }
+
+    .link-sub {
+      font-size: 11px;
+      color: rgba(255,255,255,0.4);
+    }
+
+    .link-arrow {
+      font-size: 10px;
+      color: rgba(255,255,255,0.3);
+    }
+
+    .link-divider {
+      height: 1px;
+      background: rgba(255,255,255,0.07);
+      margin: 0 13px;
+    }
+
+    .home-btn {
+      width: 100%;
+      padding: 15px;
+      background: #fff;
+      color: var(--primary-dark);
+      font-family: 'Inter', inherit;
+      font-size: 15px;
+      font-weight: 800;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: filter 0.2s, transform 0.15s;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.2);
+      text-decoration: none;
+      letter-spacing: -0.2px;
+      margin-bottom: 10px;
+    }
+
+    .home-btn:hover  { filter: brightness(0.95); }
+    .home-btn:active { transform: scale(0.97);   }
+
+    .back-btn {
+      width: 100%;
+      padding: 13px;
+      background: rgba(255,255,255,0.07);
+      border: 1.5px solid rgba(255,255,255,0.15);
+      color: rgba(255,255,255,0.6);
+      font-family: 'Inter', inherit;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 50px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .back-btn:hover  { background: rgba(255,255,255,0.12); color: #fff; }
+    .back-btn:active { background: rgba(255,255,255,0.15);              }
+
+    .footer {
+      margin-top: 28px;
+      font-size: 11px;
+      color: rgba(255,255,255,0.2);
+      letter-spacing: 0.06em;
+      text-align: center;
+      position: relative; z-index: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-line"></div>
+  <div class="bg-dots"></div>
+  <div class="bg-glow"></div>
+
+  <div class="particle p1"></div>
+  <div class="particle p2"></div>
+  <div class="particle p3"></div>
+  <div class="particle p4"></div>
+  <div class="particle p5"></div>
+  <div class="particle p6"></div>
+
+  <div class="card">
+
+    <div class="logo-strip">
+      <img
+        class="logo-img notranslate"
+        src="/assets/images/favicon.png"
+        alt="ExameNova"
+        onerror="this.style.display='none'"
+      >
+      <span class="logo-name notranslate" translate="no">ExameNova</span>
+    </div>
+
+    <div class="giant-404 notranslate">404</div>
+
+    <i class="fa-solid fa-file-circle-xmark float-icon" aria-hidden="true"></i>
+
+    <div class="title notranslate" translate="no">
+      Página <span>não encontrada</span>
+    </div>
+    <p class="subtitle notranslate" translate="no">
+      O endereço que tentou aceder não existe ou foi removido.
+      Utilize uma das opções abaixo para continuar.
+    </p>
+
+    <div class="divider"></div>
+
+    <div class="links-card">
+      <a class="link-row notranslate" href="/panel/dashboard" translate="no">
+        <div class="link-icon">
+          <i class="fa-solid fa-house" aria-hidden="true"></i>
+        </div>
+        <div class="link-body">
+          <div class="link-title">Início</div>
+          <div class="link-sub">Voltar ao painel principal</div>
+        </div>
+        <i class="fa-solid fa-chevron-right link-arrow" aria-hidden="true"></i>
+      </a>
+
+      <div class="link-divider"></div>
+
+      <a class="link-row notranslate" href="/panel/simulacao" translate="no">
+        <div class="link-icon">
+          <i class="fa-solid fa-pen-to-square" aria-hidden="true"></i>
+        </div>
+        <div class="link-body">
+          <div class="link-title">Simulação</div>
+          <div class="link-sub">Iniciar uma simulação de exame</div>
+        </div>
+        <i class="fa-solid fa-chevron-right link-arrow" aria-hidden="true"></i>
+      </a>
+
+      <div class="link-divider"></div>
+
+      <a class="link-row notranslate" href="/panel/mentor" translate="no">
+        <div class="link-icon">
+          <i class="fa-solid fa-robot" aria-hidden="true"></i>
+        </div>
+        <div class="link-body">
+          <div class="link-title">Mentor</div>
+          <div class="link-sub">Estudar com o tutor de IA</div>
+        </div>
+        <i class="fa-solid fa-chevron-right link-arrow" aria-hidden="true"></i>
+      </a>
+    </div>
+
+    <a class="home-btn notranslate" href="/panel" translate="no">
+      <i class="fa-solid fa-house" aria-hidden="true"></i>
+      Ir para o início
+    </a>
+    <a class="back-btn notranslate" href="javascript:history.back()" translate="no">
+      <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+      Voltar atrás
+    </a>
+
+  </div>
+
+  <div class="footer notranslate" translate="no">
+    ExameNova · © <span id="year"></span>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

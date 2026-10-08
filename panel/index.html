@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="pt" translate="no" class="notranslate">
+<head>
+
+  <!-- ============================================================
+       META — CHARSET & VIEWPORT
+       ============================================================ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- ============================================================
+       ANTI-AUTO-TRANSLATION
+       ============================================================ -->
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Language" content="pt">
+
+  <!-- ============================================================
+       SEO — PRIMARY
+       ============================================================ -->
+  <title>ExameNova — Plataforma de Preparação para Exames em Moçambique</title>
+  <meta name="description" content="ExameNova é a plataforma de preparação para exames nacionais de Moçambique. Simula exames anteriores, treina por tópico, acompanha o teu progresso e prepara-te com inteligência artificial. Para estudantes da 9ª, 12ª e Exames de Admissão.">
+  <meta name="keywords" content="ExameNova, exames Moçambique, preparação exames, 9ª classe, 12ª classe, exames de admissão, simulação de exames, exames anteriores, ACIPOL, IFP, Academia Militar, estudar Moçambique, plataforma exames">
+  <meta name="author" content="ExameNova">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="rating" content="general">
+  <meta name="language" content="Portuguese">
+  <meta name="geo.region" content="MZ">
+  <meta name="geo.country" content="Mozambique">
+  <link rel="canonical" href="https://examo.dovelingua.com/panel">
+
+  <!-- ============================================================
+       OPEN GRAPH — Facebook, WhatsApp, LinkedIn
+       ============================================================ -->
+  <meta property="og:type"              content="website">
+  <meta property="og:site_name"         content="ExameNova">
+  <meta property="og:title"             content="ExameNova — Preparação para Exames em Moçambique">
+  <meta property="og:description"       content="Simula exames anteriores, treina por tópico e prepara-te com inteligência artificial. Para estudantes da 9ª, 12ª e Exames de Admissão em Moçambique.">
+  <meta property="og:image"             content="https://examo.dovelingua.com/assets/images/og-image.png">
+  <meta property="og:image:secure_url"  content="https://examo.dovelingua.com/assets/images/og-image.png">
+  <meta property="og:image:type"        content="image/png">
+  <meta property="og:image:width"       content="1200">
+  <meta property="og:image:height"      content="630">
+  <meta property="og:image:alt"         content="ExameNova — Plataforma de Preparação para Exames">
+  <meta property="og:url"               content="https://examo.dovelingua.com/panel">
+  <meta property="og:locale"            content="pt_MZ">
+
+  <!-- ============================================================
+       TWITTER CARD
+       ============================================================ -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="ExameNova — Preparação para Exames em Moçambique">
+  <meta name="twitter:description" content="Simula exames anteriores, treina por tópico e prepara-te com IA. Para estudantes da 9ª, 12ª e Admissão.">
+  <meta name="twitter:image"       content="https://examo.dovelingua.com/assets/images/og-image.png">
+  <meta name="twitter:image:alt"   content="ExameNova — Plataforma de Preparação para Exames">
+
+  <!-- ============================================================
+       STRUCTURED DATA — JSON-LD
+       ============================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "ExameNova",
+    "alternateName": "Plataforma ExameNova",
+    "url": "https://examo.dovelingua.com",
+    "logo": "https://examo.dovelingua.com/assets/images/logo.png",
+    "image": "https://examo.dovelingua.com/assets/images/og-image.png",
+    "description": "Plataforma de preparação para exames nacionais de Moçambique — simulações, treino por tópico, IA e acompanhamento de progresso.",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Web, Android, iOS",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "MZN"
+    },
+    "inLanguage": "pt-MZ",
+    "audience": {
+      "@type": "Audience",
+      "audienceType": "Estudantes do Ensino Secundário e Candidatos a Exames de Admissão em Moçambique"
+    },
+    "countryOfOrigin": {
+      "@type": "Country",
+      "name": "Mozambique"
+    },
+    "keywords": "exames Moçambique, 9ª classe, 12ª classe, admissão, simulação, preparação"
+  }
+  </script>
+
+  <!-- ============================================================
+       FAVICON
+       ============================================================ -->
+  <link rel="icon" type="image/x-icon"              href="/assets/images/favicon-48x48.ico">
+  <link rel="shortcut icon" type="image/x-icon"     href="/assets/images/favicon-48x48.ico">
+  <link rel="icon" type="image/png" sizes="16x16"   href="/assets/images/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32"   href="/assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96"   href="/assets/icons/icon-96x96.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/icons/icon-512x512.png">
+  <link rel="apple-touch-icon"                      href="/assets/images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="120x120"      href="/assets/images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="152x152"      href="/assets/images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="167x167"      href="/assets/images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180"      href="/assets/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="72x72"   href="/assets/icons/icon-72x72.png">
+  <link rel="icon" type="image/png" sizes="128x128" href="/assets/icons/icon-128x128.png">
+  <link rel="icon" type="image/png" sizes="144x144" href="/assets/icons/icon-144x144.png">
+  <link rel="icon" type="image/png" sizes="152x152" href="/assets/icons/icon-152x152.png">
+  <meta name="msapplication-TileImage" content="/assets/icons/icon-144x144.png">
+
+  <!-- ============================================================
+       PWA MANIFEST
+       ============================================================ -->
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- ============================================================
+       PWA THEME
+       ============================================================ -->
+  <meta name="theme-color"                           content="#0284C7">
+  <meta name="mobile-web-app-capable"                content="yes">
+  <meta name="apple-mobile-web-app-capable"          content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title"            content="ExameNova">
+  <meta name="msapplication-TileColor"               content="#0284C7">
+
+  <!-- ============================================================
+       FONTS — INTER
+       ============================================================ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- ============================================================
+       ICONS — FONT AWESOME
+       ============================================================ -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- ============================================================
+       KATEX — Math and equation rendering
+       ============================================================ -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+
+  <!-- ============================================================
+       DARK MODE — Applied BEFORE first paint to prevent flash — Applied BEFORE first paint to prevent flash
+       Uses 'en_theme' key — separate from ProvaNova's 'pn_theme'
+       ============================================================ -->
+  <script>
+    (function () {
+      try {
+        const saved = localStorage.getItem('en_theme');
+        if (saved === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- ============================================================
+       NAV-LOADING OVERLAY STYLES
+       ============================================================ -->
+  <style>
+    #nav-loading {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.18);
+      backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(2px);
+      flex-direction: column;
+      gap: 12px;
+    }
+    #nav-loading.visible {
+      display: flex;
+    }
+    #nav-loading .nl-spinner {
+      width: 36px;
+      height: 36px;
+      border: 3px solid rgba(0, 87, 255, 0.2);
+      border-top-color: #0057FF;
+      border-radius: 50%;
+      animation: nl-spin 0.7s linear infinite;
+    }
+    #nav-loading .nl-text {
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: #ffffff;
+      letter-spacing: 0.01em;
+    }
+    @keyframes nl-spin {
+      to { transform: rotate(360deg); }
+    }
+    [data-theme="dark"] #nav-loading {
+      background: rgba(0, 0, 0, 0.45);
+    }
+  </style>
+
+  <!-- ============================================================
+       PWA SPLASH + INSTALL BANNER STYLES
+       ============================================================ -->
+  <style>
+
+    /* ── PWA SPLASH — only shown when running as installed app ── */
+    #pwa-splash {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 99999;
+      background: linear-gradient(160deg, #001A66 0%, #0030B0 50%, #0057FF 100%);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #pwa-splash::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 70% 40% at 50% 0%, rgba(124,58,237,0.15) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 30% at 100% 100%, rgba(0,10,60,0.4) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    @media (display-mode: standalone) {
+      #pwa-splash { display: flex; }
+    }
+
+    #pwa-splash.hidden {
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      pointer-events: none;
+    }
+
+    /* ── PHASE 1: LOGO ── */
+    .pwa-splash-logo-phase {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      opacity: 0;
+    }
+
+    .pwa-splash-logo-phase.active {
+      animation: splashFadeUp 0.5s ease forwards;
+    }
+
+    .pwa-splash-logo-phase.exit {
+      animation: splashFadeOutUp 0.35s ease forwards;
+    }
+
+    .pwa-splash-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 20px;
+      object-fit: cover;
+      margin-bottom: 18px;
+      box-shadow:
+        0 8px 32px rgba(0,0,0,0.3),
+        0 0 0 2px rgba(124,58,237,0.4);
+    }
+
+    .pwa-splash-name {
+      font-family: 'Inter', sans-serif;
+      font-size: 30px;
+      font-weight: 900;
+      color: #fff;
+      letter-spacing: -0.8px;
+      margin-bottom: 5px;
+    }
+
+    .pwa-splash-name .pwa-nova {
+      color: #A78BFA;
+    }
+
+    .pwa-splash-tagline {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+      font-weight: 500;
+      color: rgba(255,255,255,0.35);
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    /* ── PHASE 2: FEATURE CARDS ── */
+    .pwa-splash-cards-phase {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0 32px;
+      gap: 11px;
+      z-index: 2;
+      opacity: 0;
+    }
+
+    .pwa-splash-cards-phase.active {
+      animation: splashFadeIn 0.3s ease forwards;
+    }
+
+    .pwa-splash-cards-phase.exit {
+      animation: splashFadeOutUp 0.35s ease forwards;
+    }
+
+    .pwa-cards-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 9px;
+      font-weight: 700;
+      color: rgba(255,255,255,0.3);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      align-self: flex-start;
+      margin-bottom: 2px;
+    }
+
+    .pwa-feat-card {
+      width: 100%;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 14px;
+      padding: 13px 16px;
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+
+    .pwa-feat-card.slide-in {
+      animation: splashCardIn 0.42s cubic-bezier(0.25,0.8,0.25,1) forwards;
+    }
+
+    .pwa-feat-card-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: rgba(124,58,237,0.2);
+      border: 1px solid rgba(124,58,237,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .pwa-feat-card-icon i {
+      font-size: 14px;
+      color: #A78BFA;
+    }
+
+    .pwa-feat-card-text { flex: 1; min-width: 0; }
+
+    .pwa-feat-card-title {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 1px;
+    }
+
+    .pwa-feat-card-desc {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+      color: rgba(255,255,255,0.38);
+      line-height: 1.4;
+    }
+
+    /* ── PHASE 3: READY ── */
+    .pwa-splash-ready-phase {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      opacity: 0;
+      gap: 8px;
+    }
+
+    .pwa-splash-ready-phase.active {
+      animation: splashZoomIn 0.5s cubic-bezier(0.34,1.4,0.64,1) forwards;
+    }
+
+    .pwa-ready-icon-wrap {
+      width: 64px;
+      height: 64px;
+      border-radius: 20px;
+      background: rgba(124,58,237,0.15);
+      border: 1.5px solid rgba(124,58,237,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+
+    .pwa-ready-icon-wrap i {
+      font-size: 26px;
+      color: #A78BFA;
+    }
+
+    .pwa-ready-title {
+      font-family: 'Inter', sans-serif;
+      font-size: 22px;
+      font-weight: 900;
+      color: #ffffff;
+      letter-spacing: -0.5px;
+    }
+
+    .pwa-ready-sub {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      color: rgba(255,255,255,0.35);
+      text-align: center;
+      max-width: 200px;
+      line-height: 1.5;
+    }
+
+    /* ── PROGRESS BAR ── */
+    .pwa-splash-bar-wrap {
+      position: absolute;
+      bottom: 48px;
+      left: 40px;
+      right: 40px;
+      height: 2px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 99px;
+      overflow: hidden;
+      z-index: 3;
+    }
+
+    .pwa-splash-bar-fill {
+      height: 100%;
+      width: 0%;
+      border-radius: 99px;
+      background: linear-gradient(90deg, #7C3AED, #A78BFA);
+      transition: width 0.35s ease;
+    }
+
+    /* ── BRAND ── */
+    .pwa-splash-brand {
+      position: absolute;
+      bottom: 22px;
+      font-family: 'Inter', sans-serif;
+      font-size: 9px;
+      color: rgba(255,255,255,0.15);
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      z-index: 3;
+    }
+
+    /* ── INSTALL BANNER ── */
+    #pwa-install-banner {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 8000;
+      padding: 12px 16px;
+      padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+      background: #fff;
+      border-top: 1px solid rgba(0,87,255,0.1);
+      box-shadow: 0 -4px 24px rgba(0,0,0,0.1);
+      animation: installBannerIn 0.35s cubic-bezier(0.34,1.2,0.64,1) both;
+    }
+
+    [data-theme="dark"] #pwa-install-banner {
+      background: #131929;
+      border-top-color: rgba(124,58,237,0.2);
+    }
+
+    @keyframes installBannerIn {
+      from { transform: translateY(100%); opacity: 0; }
+      to   { transform: translateY(0);    opacity: 1; }
+    }
+
+    .pwa-install-inner {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .pwa-install-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 11px;
+      object-fit: cover;
+      flex-shrink: 0;
+      box-shadow: 0 2px 8px rgba(0,87,255,0.2);
+    }
+
+    .pwa-install-text { flex: 1; min-width: 0; }
+
+    .pwa-install-title {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: #1A1A2E;
+      margin-bottom: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    [data-theme="dark"] .pwa-install-title { color: #EEF2FF; }
+
+    .pwa-install-sub {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      color: #9AA3B5;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .pwa-install-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: linear-gradient(135deg, #0369A1, #0284C7);
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 9px 16px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      flex-shrink: 0;
+      box-shadow: 0 3px 12px rgba(2,132,199,0.35);
+      transition: filter 0.2s, transform 0.15s;
+      white-space: nowrap;
+    }
+
+    .pwa-install-btn:hover  { filter: brightness(1.08); }
+    .pwa-install-btn:active { transform: scale(0.96); }
+
+    .pwa-install-dismiss {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: rgba(0,0,0,0.06);
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #9AA3B5;
+      font-size: 12px;
+      flex-shrink: 0;
+      transition: background 0.2s;
+    }
+
+    [data-theme="dark"] .pwa-install-dismiss {
+      background: rgba(255,255,255,0.06);
+    }
+
+    .pwa-install-dismiss:hover { background: rgba(0,0,0,0.12); }
+
+    /* ── KEYFRAMES ── */
+    @keyframes splashFadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes splashFadeOutUp {
+      from { opacity: 1; transform: translateY(0); }
+      to   { opacity: 0; transform: translateY(-14px); }
+    }
+    @keyframes splashFadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    @keyframes splashCardIn {
+      from { opacity: 0; transform: translateX(-50px); }
+      to   { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes splashZoomIn {
+      from { opacity: 0; transform: scale(0.82); }
+      to   { opacity: 1; transform: scale(1); }
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <!-- ============================================================
+       APP SHELL
+       The router renders all screens inside #screen-root.
+       #navbar-mount is injected by ui.renderNavbar().
+       ============================================================ -->
+  <div id="screen-root"></div>
+  <div id="navbar-mount"></div>
+
+  <!-- ============================================================
+       NAV-LOADING OVERLAY
+       Shown by router after 300ms if navigation is slow.
+       ============================================================ -->
+  <div id="nav-loading" role="status" aria-label="A carregar">
+    <div class="nl-spinner"></div>
+    <span class="nl-text notranslate" translate="no">A carregar...</span>
+  </div>
+
+ <!-- ============================================================
+       JSPDF — PDF generation for Meu Exame
+       ============================================================ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <!-- ============================================================
+       ROUTER — Entry point of the entire SPA
+       All screens load through here. No other scripts needed.
+       Path is relative to panel/index.html location.
+       ============================================================ -->
+  <script type="module" src="/panel/js/core/router.js"></script>
+
+  <!-- ============================================================
+       SERVICE WORKER REGISTRATION
+       ============================================================ -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+          .catch(err => console.warn('[ExameNova] SW registration failed:', err));
+      });
+    }
+  </script>
+
+  <!-- ============================================================
+       PWA SPLASH SCREEN
+       ============================================================ -->
+  <div id="pwa-splash" role="presentation" aria-hidden="true">
+
+    <!-- PHASE 1: LOGO -->
+    <div class="pwa-splash-logo-phase" id="pwa-phase-logo">
+      <img
+        class="pwa-splash-icon notranslate"
+        src="/assets/icons/icon-192x192.png"
+        alt="ExameNova"
+        onerror="this.src='/assets/images/favicon.png'"
+      >
+      <div class="pwa-splash-name notranslate" translate="no">
+        Exame<span class="pwa-nova">Nova</span>
+      </div>
+      <div class="pwa-splash-tagline notranslate" translate="no">
+        Preparação para Exames
+      </div>
+    </div>
+
+    <!-- PHASE 2: FEATURE CARDS -->
+    <div class="pwa-splash-cards-phase" id="pwa-phase-cards">
+      <div class="pwa-cards-label notranslate" translate="no">
+        O que podes fazer
+      </div>
+
+      <div class="pwa-feat-card notranslate" id="pwa-card-1">
+        <div class="pwa-feat-card-icon">
+          <i class="fa-solid fa-file-pen"></i>
+        </div>
+        <div class="pwa-feat-card-text">
+          <div class="pwa-feat-card-title">Simulação</div>
+          <div class="pwa-feat-card-desc">Exames anteriores reais</div>
+        </div>
+      </div>
+
+      <div class="pwa-feat-card notranslate" id="pwa-card-2">
+        <div class="pwa-feat-card-icon">
+          <i class="fa-solid fa-brain"></i>
+        </div>
+        <div class="pwa-feat-card-text">
+          <div class="pwa-feat-card-title">Mentor</div>
+          <div class="pwa-feat-card-desc">Tutor com inteligência artificial</div>
+        </div>
+      </div>
+
+      <div class="pwa-feat-card notranslate" id="pwa-card-3">
+        <div class="pwa-feat-card-icon">
+          <i class="fa-solid fa-chart-line"></i>
+        </div>
+        <div class="pwa-feat-card-text">
+          <div class="pwa-feat-card-title">Progresso</div>
+          <div class="pwa-feat-card-desc">Acompanha a tua evolução</div>
+        </div>
+      </div>
+
+      <div class="pwa-feat-card notranslate" id="pwa-card-4">
+        <div class="pwa-feat-card-icon">
+          <i class="fa-solid fa-bolt"></i>
+        </div>
+        <div class="pwa-feat-card-text">
+          <div class="pwa-feat-card-title">Desafio Diário</div>
+          <div class="pwa-feat-card-desc">Ganha Moedas todos os dias</div>
+        </div>
+      </div>
+
+      <div class="pwa-feat-card notranslate" id="pwa-card-5">
+        <div class="pwa-feat-card-icon">
+          <i class="fa-solid fa-comments"></i>
+        </div>
+        <div class="pwa-feat-card-text">
+          <div class="pwa-feat-card-title">Bate-papo</div>
+          <div class="pwa-feat-card-desc">Estuda com os teus colegas</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- PHASE 3: READY -->
+    <div class="pwa-splash-ready-phase" id="pwa-phase-ready">
+      <div class="pwa-ready-icon-wrap">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <div class="pwa-ready-title notranslate" translate="no">Pronto!</div>
+      <div class="pwa-ready-sub notranslate" translate="no">
+        A entrar na plataforma…
+      </div>
+    </div>
+
+    <!-- PROGRESS BAR -->
+    <div class="pwa-splash-bar-wrap">
+      <div class="pwa-splash-bar-fill" id="pwa-progress-fill"></div>
+    </div>
+
+    <div class="pwa-splash-brand notranslate" translate="no">
+      © <span id="splash-year"></span> ExameNova
+    </div>
+
+  </div>
+
+  <!-- ============================================================
+       INSTALL BANNER
+       ============================================================ -->
+  <div id="pwa-install-banner" role="complementary" aria-label="Instalar aplicação">
+    <div class="pwa-install-inner">
+      <img
+        class="pwa-install-icon"
+        src="/assets/icons/icon-192x192.png"
+        alt="ExameNova"
+        onerror="this.src='/assets/images/favicon.png'"
+      >
+      <div class="pwa-install-text">
+        <div class="pwa-install-title notranslate" translate="no">
+          Instalar o ExameNova
+        </div>
+        <div class="pwa-install-sub notranslate" translate="no">
+          Adicionar ao ecrã inicial — acesso rápido
+        </div>
+      </div>
+      <button class="pwa-install-btn notranslate" id="pwa-install-btn" translate="no">
+        <i class="fa-solid fa-download" style="font-size:10px;"></i>
+        Instalar
+      </button>
+      <button class="pwa-install-dismiss" id="pwa-install-dismiss" aria-label="Fechar">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       IOS INSTALL HINT
+       Safari never fires beforeinstallprompt.
+       This banner appears only on iPhone/iPad in Safari,
+       only when not already installed.
+       ============================================================ -->
+  <div id="pwa-ios-hint" role="complementary" aria-label="Instalar no iPhone" style="display:none;">
+    <div class="pwa-install-inner">
+      <img
+        class="pwa-install-icon"
+        src="/assets/icons/icon-192x192.png"
+        alt="ExameNova"
+        onerror="this.src='/assets/images/favicon.png'"
+      >
+      <div class="pwa-install-text">
+        <div class="pwa-install-title notranslate" translate="no">
+          Instalar no ecrã inicial
+        </div>
+        <div class="pwa-install-sub notranslate" translate="no">
+          Toque em <i class="fa-solid fa-arrow-up-from-bracket" style="font-size:10px;"></i> e depois <strong>Adicionar ao ecrã inicial</strong>
+        </div>
+      </div>
+      <button class="pwa-install-dismiss" id="pwa-ios-dismiss" aria-label="Fechar">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       SPLASH + INSTALL BANNER SCRIPTS
+       ============================================================ -->
+  <script>
+    // ── SPLASH YEAR ──
+    const splashYearEl = document.getElementById('splash-year');
+    if (splashYearEl) splashYearEl.textContent = new Date().getFullYear();
+
+    // ── SPLASH SEQUENCE ──
+    (function () {
+      const splash = document.getElementById('pwa-splash');
+      if (!splash) return;
+
+      const isStandalone =
+        window.matchMedia('(display-mode: standalone)').matches ||
+        window.navigator.standalone === true;
+
+      if (!isStandalone) {
+        splash.style.display = 'none';
+        return;
+      }
+
+      const wait = ms => new Promise(r => setTimeout(r, ms));
+
+      function setProgress(pct) {
+        const bar = document.getElementById('pwa-progress-fill');
+        if (bar) bar.style.width = pct + '%';
+      }
+
+      let sequenceDone = false;
+      let routerDone   = false;
+      let dismissed    = false;
+
+      function tryDismiss() {
+        if (!sequenceDone || !routerDone || dismissed) return;
+        dismissed = true;
+        splash.classList.add('hidden');
+        setTimeout(() => { splash.style.display = 'none'; }, 420);
+      }
+
+      // Router calls this when first screen is ready
+      window.dismissPWASplash = function () {
+        routerDone = true;
+        tryDismiss();
+      };
+
+      // Safety net — dismiss after 6s regardless
+      setTimeout(() => { routerDone = true; tryDismiss(); }, 6000);
+
+      async function runSplash() {
+        const phaseLogo  = document.getElementById('pwa-phase-logo');
+        const phaseCards = document.getElementById('pwa-phase-cards');
+        const phaseReady = document.getElementById('pwa-phase-ready');
+        const cards = [
+          document.getElementById('pwa-card-1'),
+          document.getElementById('pwa-card-2'),
+          document.getElementById('pwa-card-3'),
+          document.getElementById('pwa-card-4'),
+          document.getElementById('pwa-card-5'),
+        ];
+
+        // PHASE 1: Logo
+        if (phaseLogo) phaseLogo.classList.add('active');
+        setProgress(10);
+        await wait(1200);
+
+        if (phaseLogo) phaseLogo.classList.add('exit');
+        await wait(350);
+        if (phaseLogo) {
+          phaseLogo.style.opacity = '0';
+          phaseLogo.className = 'pwa-splash-logo-phase';
+        }
+
+        // PHASE 2: Feature cards
+        if (phaseCards) phaseCards.classList.add('active');
+        setProgress(25);
+        await wait(150);
+
+        for (let i = 0; i < cards.length; i++) {
+          if (cards[i]) cards[i].classList.add('slide-in');
+          setProgress(25 + (i + 1) * 10);
+          await wait(160);
+        }
+
+        await wait(700);
+
+        if (phaseCards) phaseCards.classList.add('exit');
+        await wait(350);
+        if (phaseCards) {
+          phaseCards.style.opacity = '0';
+          phaseCards.className = 'pwa-splash-cards-phase';
+        }
+
+        // PHASE 3: Ready
+        setProgress(92);
+        if (phaseReady) phaseReady.classList.add('active');
+        await wait(400);
+        setProgress(100);
+        await wait(300);
+
+        sequenceDone = true;
+        tryDismiss();
+      }
+
+      runSplash();
+    })();
+
+    // ── INSTALL BANNER ──
+    (function () {
+      const banner     = document.getElementById('pwa-install-banner');
+      const installBtn = document.getElementById('pwa-install-btn');
+      const dismissBtn = document.getElementById('pwa-install-dismiss');
+
+      if (!banner || !installBtn || !dismissBtn) return;
+
+      const isStandalone =
+        window.matchMedia('(display-mode: standalone)').matches ||
+        window.navigator.standalone === true;
+
+      if (isStandalone) return;
+
+      try {
+        const dismissedAt = parseInt(localStorage.getItem('en_install_dismissed') || '0');
+        // Don't show again for 7 days after dismissal
+        if (Date.now() - dismissedAt < 7 * 24 * 60 * 60 * 1000) return;
+      } catch (e) {}
+
+      let _deferredPrompt = null;
+
+      window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        _deferredPrompt = e;
+        setTimeout(() => {
+          banner.style.display = 'block';
+        }, 3000);
+      });
+
+      installBtn.addEventListener('click', async () => {
+        if (!_deferredPrompt) return;
+        banner.style.display = 'none';
+        _deferredPrompt.prompt();
+        const { outcome } = await _deferredPrompt.userChoice;
+        _deferredPrompt = null;
+      });
+
+      dismissBtn.addEventListener('click', () => {
+        banner.style.display = 'none';
+        try {
+          localStorage.setItem('en_install_dismissed', String(Date.now()));
+        } catch (e) {}
+      });
+
+      window.addEventListener('appinstalled', () => {
+        banner.style.display = 'none';
+        _deferredPrompt = null;
+      });
+    })();
+
+    // ── IOS INSTALL HINT ──
+    (function () {
+      const hint      = document.getElementById('pwa-ios-hint');
+      const dismissBtn = document.getElementById('pwa-ios-dismiss');
+      if (!hint || !dismissBtn) return;
+
+      // Only show on iOS Safari, not already installed
+      const isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent);
+      const isSafari = /safari/i.test(navigator.userAgent) && !/crios|fxios|opios/i.test(navigator.userAgent);
+      const isStandalone =
+        window.matchMedia('(display-mode: standalone)').matches ||
+        window.navigator.standalone === true;
+
+      if (!isIOS || !isSafari || isStandalone) return;
+
+      try {
+        const dismissedAt = parseInt(localStorage.getItem('en_ios_hint_dismissed') || '0');
+        if (Date.now() - dismissedAt < 7 * 24 * 60 * 60 * 1000) return;
+      } catch (e) {}
+
+      setTimeout(() => {
+        hint.style.display = 'block';
+      }, 3000);
+
+      dismissBtn.addEventListener('click', () => {
+        hint.style.display = 'none';
+        try {
+          localStorage.setItem('en_ios_hint_dismissed', String(Date.now()));
+        } catch (e) {}
+      });
+    })();
+  </script>
+
+</body>
+</html> 
